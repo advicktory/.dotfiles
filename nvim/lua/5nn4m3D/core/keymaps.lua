@@ -5,7 +5,9 @@ local key = vim.keymap
 -- general keymaps
 key.set("i", "jk", "<ESC>") -- escaape!
 key.set("n", "<leader>nh", ":nohl<CR>") -- Clear Search Highlights
-key.set("n", "x", '"_x') -- Delete Character and Dont save to Register
+key.set("n", "x", "_x") -- Delete Character and Dont save to Register
+key.set("n", "j", "k")
+key.set("n", "k", "j")
 
 -- increment/decrement numbers
 key.set("n", "<leader>+", "<C-a>") -- increment
@@ -28,7 +30,6 @@ key.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- make the tab as large as p
 key.set("n", "<leader>b", ":NvimTreeToggle<CR>") -- toggle file explorer
 
 -- Fold Stuff Maybe look into it
-
 
 -- Telescope
 key.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
