@@ -10,10 +10,20 @@ opt.shiftwidth = 4
 opt.expandtab = true
 opt.autoindent = true
 
+-- Fold
+
+vim.cmd([[
+augroup remember_folds
+  autocmd!
+  autocmd BufWinLeave * mkview
+  autocmd BufWinEnter * silent! loadview
+augroup END
+]])
+
 -- Line Wrapping
 opt.wrap = false
 
--- Searching 
+-- Searching
 opt.ignorecase = true
 opt.smartcase = true
 
