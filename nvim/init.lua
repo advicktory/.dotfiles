@@ -16,6 +16,8 @@ require("5nn4m3D.plugins.autopairs")
 require("5nn4m3D.plugins.treesitter")
 require("5nn4m3D.plugins.gitsigns")
 
+require("5nn4m3D.plugins.auto-dark-mode")
+
 --5nn4m3D/plugins/lsp Dir
 require("5nn4m3D.plugins.lsp.mason")
 require("5nn4m3D.plugins.lsp.lspsaga")

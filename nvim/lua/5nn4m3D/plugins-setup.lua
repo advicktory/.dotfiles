@@ -21,7 +21,11 @@ vim.cmd([[
 return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim") -- Needed to use other plugins
-	use("bluz71/vim-nightfly-guicolors")
+
+	use("bluz71/vim-nightfly-guicolors") -- Night theme
+	use("sainnhe/everforest") -- Light Theme (Needs to be configured)
+	use("f-person/auto-dark-mode.nvim") -- macOS Dark mode switcher (Comment out if not on macos)
+
 	use("christoomey/vim-tmux-navigator") -- Use CTRL + "hjkl" to move between split screens
 	use("szw/vim-maximizer") -- Maximize a split screen: <leader>sw
 	use("tpope/vim-surround") -- Surround things with another thing: ys *motion* *character*

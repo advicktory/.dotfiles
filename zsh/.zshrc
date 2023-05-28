@@ -110,8 +110,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias zshc="nvim ~/.zshrc"
-alias szsh="source ~/.zshrc"
+alias zshc="nvim ~/.dotfiles/zsh/.zshrc"
+alias szsh="source ~/.dotfiles/zsh/.zshrc"
 alias ls="ls -la"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.dotfiles/zsh/.p10k.zsh ]] || source ~/.dotfiles/zsh/.p10k.zsh

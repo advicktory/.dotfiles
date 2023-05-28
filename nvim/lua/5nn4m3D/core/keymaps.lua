@@ -18,13 +18,12 @@ key.set("n", "<leader>sd", "<C-w>v") -- split window vertically
 key.set("n", "<leader>sx", "<C-w>s") -- split window horizontally
 key.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
 key.set("n", "<leader>sc", ":close<CR>") -- close current split window
+key.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- make the tab as large as possible
 
 key.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 key.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 key.set("n", "<leader>t[", ":tabn<CR>") --  go to next tab
 key.set("n", "<leader>t]", ":tabp<CR>") --  go to previous tab
-
-key.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- make the tab as large as possible
 
 -- File Explorer
 key.set("n", "<leader>b", ":NvimTreeToggle<CR>") -- toggle file explorer
@@ -37,3 +36,5 @@ key.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in cur
 key.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 key.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 key.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
+
+-- Colorscheme toggle
