@@ -6,8 +6,8 @@ local key = vim.keymap
 key.set("i", "jk", "<ESC>") -- escaape!
 key.set("n", "<leader>nh", ":nohl<CR>") -- Clear Search Highlights
 key.set("n", "x", "_x") -- Delete Character and Dont save to Register
-key.set("n", "j", "k")
-key.set("n", "k", "j")
+-- key.set("n", "j", "k")
+-- key.set("n", "k", "j")
 
 -- increment/decrement numbers
 key.set("n", "<leader>+", "<C-a>") -- increment
