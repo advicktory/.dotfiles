@@ -26,7 +26,8 @@ key.set("n", "<leader>t[", ":tabn<CR>") --  go to next tab
 key.set("n", "<leader>t]", ":tabp<CR>") --  go to previous tab
 
 -- File Explorer
-key.set("n", "<leader>b", ":NvimTreeToggle<CR>") -- toggle file explorer
+key.set("n", "<leader>bt", ":NvimTreeToggle<CR>") -- toggle file explorer
+key.set("n", "<leader>ft", ":NvimTreeFocus<CR>")
 
 -- Fold Stuff Maybe look into it
 
