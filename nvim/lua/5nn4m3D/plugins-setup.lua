@@ -55,7 +55,7 @@ return require("packer").startup(function(use)
 	use("neovim/nvim-lspconfig")
 	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
 	use({
-		"glepnir/lspsaga.nvim",
+		"nvimdev/lspsaga.nvim",
 		branch = "main",
 		-- requires = {
 		--     { "nvim-tree/nvim-web-devicons" },
