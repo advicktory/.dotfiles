@@ -3,20 +3,21 @@ vim.g.mapleader = " "
 local key = vim.keymap
 
 -- general keymaps
-key.set("i", "jk", "<ESC>") -- escaape!
+key.set("i", "ni", "<ESC>") -- escaape!
 key.set("n", "<leader>nh", ":nohl<CR>") -- Clear Search Highlights
 key.set("n", "x", "_x") -- Delete Character and Dont save to Register
--- key.set("n", "j", "k")
--- key.set("n", "k", "j")
+key.set("n", "n", "j")
+key.set("n", "i", "k")
+key.set("n", "k", "i")
 
 -- increment/decrement numbers
 key.set("n", "<leader>+", "<C-a>") -- increment
 key.set("n", "<leader>-", "<C-x>") -- decrement
 
 -- window management
-key.set("n", "<leader>sd", "<C-w>v") -- split window vertically
+key.set("n", "<leader>se", "<C-w>v") -- split window vertically
 key.set("n", "<leader>sx", "<C-w>s") -- split window horizontally
-key.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
+key.set("n", "<leader>sd", "<C-w>=") -- make split windows equal width & height
 key.set("n", "<leader>sc", ":close<CR>") -- close current split window
 key.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- make the tab as large as possible
 
