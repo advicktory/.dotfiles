@@ -1,10 +1,16 @@
 #!/bin/bash
 
+# source "$CONFIG_DIR/colors.sh"
+
 sketchybar --add item front_app left \
-           --set front_app       background.color=0x00000000 \
-                                 icon.color=0xffffffff   \
+           --set front_app       background.color=$TRANSPARENT \
+                                 background.padding_left=2 \
+                                 background.padding_right=5 \
+\
+                                 icon.color=$SemiLIGHT_BEIGE \
                                  icon.font="sketchybar-app-font:Regular:17.0" \
-                                 label.color=0xffffffff \
-                                 label.font="$FONT:Regular:14.0" \
+                                 icon.padding_left=2 \
+                                 icon.padding_right=2 \
+\
                                  script="$PLUGIN_DIR/front_app.sh"            \
            --subscribe front_app front_app_switched

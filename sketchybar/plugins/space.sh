@@ -4,15 +4,21 @@
 # the space invoking this script (with name: $NAME) is currently selected:
 # https://felixkratz.github.io/SketchyBar/config/components#space----associate-mission-control-spaces-with-an-item
 
-# source "$CONFIG_DIR/colors.sh" # Loads all defined colors
+source "$CONFIG_DIR/colors.sh"
 
 if [ $SELECTED = true ]; then
-  sketchybar --set $NAME background.drawing=on \
-                         background.color0xff1a3636 \
-                         label.color=0xff40534c \
-                         icon.color=0xffd6bd98 \
+    echo "$NAME"
+    sketchybar --animate tanh 30 \
+               --set $NAME background.drawing=on \
+                         label.color=$DARKER_SemiLIGHT_BEIGE  \
+                         icon.color=$SMOOTH_BEECH \
+                         background.color=$EVERGLADE \
+                         background.border_width=1 \
+                         background.border_color=$Opacity25_SemiLIGHT_BEIGE \
+    
 else
-  sketchybar --set $NAME background.drawing=off \
-                         label.color=0xffffffff \
-                         icon.color=0xffffffff
+    sketchybar --animate tanh 60 \
+                --set $NAME background.drawing=off \
+                         label.color=$SemiLIGHT_BEIGE \
+                         icon.color=$CRICKET_GREEN
 fi

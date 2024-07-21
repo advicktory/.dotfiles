@@ -14,5 +14,6 @@ if [ "$SENDER" = "space_windows_change" ]; then
     icon_strip=" —"
   fi
 
+  echo "$icon_strip"
   sketchybar --set space.$space label="$icon_strip"
 fi
