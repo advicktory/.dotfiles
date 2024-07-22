@@ -6,8 +6,6 @@
 # https://felixkratz.github.io/SketchyBar/config/events#events-and-scripting
 
 if [ "$SENDER" = "front_app_switched" ]; then
-    sketchybar  --animate sin 30 --set front_app icon.y_offset=100  \
-                --set $NAME icon="$($CONFIG_DIR/plugins/icon_map_fn.sh "$INFO")" icon.y_offset=100 \
-                --animate sin 30 --set front_app icon.y_offset=100 icon.y_offset=0 
-
+    sketchybar --animate exp 7 --set front_app icon.y_offset=45 icon.y_offset=0 icon.y_offset=15 icon.y_offset=0 icon.y_offset=5 icon.y_offset=0 \
+               --set $NAME icon="$($CONFIG_DIR/plugins/icon_map_fn.sh "$INFO")"  
 fi
