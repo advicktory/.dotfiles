@@ -9,14 +9,13 @@ do
                               icon=$sid                                  \
                               icon.padding_left=10 \
                               label.padding_right=1 \
-                              label.font="sketchybar-app-font:Regular:17.0" \
+                              label.font="sketchybar-app-font:Regular:15.0" \
                               label.padding_right=20                     \
                               label.y_offset=-1                          \
                               script="$PLUGIN_DIR/space.sh" \
                          background.height=32 \
                          background.corner_radius=7 \
-                         # background.padding_right=5 \
-                         # background.padding_left=5 
+             --subscribe space.$sid front_app_switched
                          
 done
 sketchybar --add item space_separator left                             \
